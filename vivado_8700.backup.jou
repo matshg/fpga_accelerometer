@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Apr 21 12:47:46 2018
+# Process ID: 8700
+# Current directory: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2208 C:\Users\matsg17\Desktop\project_friday\fpga_accelerometer\fpga_accelerometer.xpr
+# Log file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/vivado.log
+# Journal file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.xpr
+update_files -from_files C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc -to_files C:/Users/matsg17/Desktop/project_friday/Nexys4DDR_Master.xdc -filesets [get_filesets *]
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_7segment.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_7segment.vhd
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd
+remove_files  C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_7segment.vhd
+file delete -force C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_7segment.vhd
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_update.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_update.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

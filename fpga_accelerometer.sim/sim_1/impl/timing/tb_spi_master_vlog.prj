@@ -1,0 +1,5 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "tb_spi_master_time_impl.v"
+
+# Do not sort compile order
+nosort

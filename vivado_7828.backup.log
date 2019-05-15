@@ -1,0 +1,554 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Apr 20 12:01:27 2018
+# Process ID: 7828
+# Current directory: C:/Users/matsg17/Desktop/fpga_accelerometer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8960 C:\Users\matsg17\Desktop\fpga_accelerometer\fpga_accelerometer.xpr
+# Log file: C:/Users/matsg17/Desktop/fpga_accelerometer/vivado.log
+# Journal file: C:/Users/matsg17/Desktop/fpga_accelerometer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/matsg17/Desktop/ele112/fpga_accelerometer' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/matsg17/Nexys4DDR_Master.xdc', nor could it be found using path 'C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 816.625 ; gain = 25.055
+update_compile_order -fileset sources_1
+update_files -from_files C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc -to_files C:/Users/matsg17/Nexys4DDR_Master.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file 'C:/Users/matsg17/Nexys4DDR_Master.xdc' with file 'C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc'.
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_data_transition' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_data_transition_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity delay_logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/prescaler.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity prescaler
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity select_logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/shiftlne.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shiftlne
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity spi_master
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_transition
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sim_1/new/tb_data_transition.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_data_transition
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sim_1/new/tb_spi_master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_spi_master
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sim_1/new/tb_select_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_select_logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sim_1/new/tb_delay_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_delay_logic
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto c191c17362314ab99b749d4185f77a2d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_data_transition_behav xil_defaultlib.tb_data_transition -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xil_defaultlib.components
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.prescaler [prescaler_default]
+Compiling architecture behavioral of entity xil_defaultlib.counter [counter_default]
+Compiling architecture behavioral of entity xil_defaultlib.shiftlne [\shiftlne(n=64)\]
+Compiling architecture behavioral of entity xil_defaultlib.spi_master [spi_master_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay_logic [delay_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.select_logic [select_logic_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_transition [data_transition_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_data_transition
+Built simulation snapshot tb_data_transition_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.sim/sim_1/behav/xsim.dir/tb_data_transition_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.sim/sim_1/behav/xsim.dir/tb_data_transition_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr 20 12:35:58 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 20 12:35:58 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 845.469 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_data_transition_behav -key {Behavioral:sim_1:Functional:tb_data_transition} -tclbatch {tb_data_transition.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source tb_data_transition.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_data_transition_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:16 . Memory (MB): peak = 853.031 ; gain = 7.563
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Apr 20 12:38:11 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Fri Apr 20 12:38:11 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Apr 20 12:54:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Fri Apr 20 12:54:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742578A
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Apr 20 13:07:28 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Fri Apr 20 13:07:28 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+create_project display C:/Users/matsg17/Desktop/display -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+close_project
+create_project decoder C:/Users/matsg17/Desktop/decoder -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+config_webtalk -user on
+set_property target_language VHDL [current_project]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/matsg17/Desktop/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd:]
+close_project
+create_project decoder C:/Users/matsg17/Desktop/project/decoder -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+set_property target_language VHDL [current_project]
+add_files -fileset constrs_1 -norecurse C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc
+file mkdir C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sources_1/new
+close [ open C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sources_1/new/decoder.vhd w ]
+add_files C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sources_1/new/decoder.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sim_1/new/tb_decoder.vhd w ]
+add_files -fileset sim_1 C:/Users/matsg17/Desktop/project/decoder/decoder.srcs/sim_1/new/tb_decoder.vhd
+update_compile_order -fileset sim_1
+current_project fpga_accelerometer
+current_project decoder
+update_compile_order -fileset sim_1
+create_project binary_to_bcd C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd -part xc7k70tfbv676-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+set_property target_language VHDL [current_project]
+add_files -norecurse {C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd
+update_compile_order -fileset sim_1
+set_property top signed_to_binary_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_to_binary_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj signed_to_binary_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1069e494ccc24ace886709f44c065f0f --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot signed_to_binary_tb_behav xil_defaultlib.signed_to_binary_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.components
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary [signed_to_binary_default]
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary_tb
+Built simulation snapshot signed_to_binary_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr 20 16:48:22 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 20 16:48:22 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "signed_to_binary_tb_behav -key {Behavioral:sim_1:Functional:signed_to_binary_tb} -tclbatch {signed_to_binary_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source signed_to_binary_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'signed_to_binary_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.512 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_to_binary_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj signed_to_binary_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1069e494ccc24ace886709f44c065f0f --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot signed_to_binary_tb_behav xil_defaultlib.signed_to_binary_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.components
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary [signed_to_binary_default]
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary_tb
+Built simulation snapshot signed_to_binary_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr 20 16:48:47 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 20 16:48:47 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "signed_to_binary_tb_behav -key {Behavioral:sim_1:Functional:signed_to_binary_tb} -tclbatch {signed_to_binary_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source signed_to_binary_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'signed_to_binary_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1221.512 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_to_binary_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj signed_to_binary_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1069e494ccc24ace886709f44c065f0f --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot signed_to_binary_tb_behav xil_defaultlib.signed_to_binary_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.components
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary [signed_to_binary_default]
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary_tb
+Built simulation snapshot signed_to_binary_tb_behav
+
+****** Webtalk v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav/xsim.dir/signed_to_binary_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Apr 20 16:49:17 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2017.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Apr 20 16:49:17 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "signed_to_binary_tb_behav -key {Behavioral:sim_1:Functional:signed_to_binary_tb} -tclbatch {signed_to_binary_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+source signed_to_binary_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'signed_to_binary_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.512 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_to_binary_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj signed_to_binary_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1069e494ccc24ace886709f44c065f0f --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot signed_to_binary_tb_behav xil_defaultlib.signed_to_binary_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.components
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary [signed_to_binary_default]
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary_tb
+Built simulation snapshot signed_to_binary_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1221.512 ; gain = 0.000
+relaunch_sim
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'signed_to_binary_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj signed_to_binary_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sources_1/new/signed_to_binary.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd.srcs/sim_1/new/signed_to_binary_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity signed_to_binary_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/matsg17/Desktop/binary_to_bcd/binary_to_bcd/binary_to_bcd.sim/sim_1/behav'
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 1069e494ccc24ace886709f44c065f0f --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot signed_to_binary_tb_behav xil_defaultlib.signed_to_binary_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.components
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary [signed_to_binary_default]
+Compiling architecture behavioral of entity xil_defaultlib.signed_to_binary_tb
+Built simulation snapshot signed_to_binary_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2017.2
+Time resolution is 1 ps
+current_project fpga_accelerometer
+current_sim simulation_1
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292742578A
+current_project decoder
+close_project
+current_project fpga_accelerometer
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 20 17:35:15 2018...

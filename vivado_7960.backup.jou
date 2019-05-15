@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Apr 21 21:10:29 2018
+# Process ID: 7960
+# Current directory: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7832 C:\Users\matsg17\Desktop\project_friday\fpga_accelerometer\fpga_accelerometer.xpr
+# Log file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/vivado.log
+# Journal file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.xpr

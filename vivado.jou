@@ -1,64 +1,51 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sat Apr 14 15:54:37 2018
-# Process ID: 10916
-# Current directory: C:/Users/mg/Desktop/uia/ELE112/prosjekt/PROJECT
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10756 C:\Users\mg\Desktop\uia\ELE112\prosjekt\PROJECT\PROJECT.xpr
-# Log file: C:/Users/mg/Desktop/uia/ELE112/prosjekt/PROJECT/vivado.log
-# Journal file: C:/Users/mg/Desktop/uia/ELE112/prosjekt/PROJECT\vivado.jou
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Fri Apr 27 02:11:52 2018
+# Process ID: 90296
+# Current directory: D:/fpga_accelerometer/fpga_accelerometer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent87608 D:\fpga_accelerometer\fpga_accelerometer\fpga_accelerometer.xpr
+# Log file: D:/fpga_accelerometer/fpga_accelerometer/vivado.log
+# Journal file: D:/fpga_accelerometer/fpga_accelerometer\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/mg/Desktop/uia/ELE112/prosjekt/PROJECT/PROJECT.xpr
-update_compile_order -fileset sources_1
-launch_simulation
-create_project delay_logic C:/Users/mg/Desktop/ELE112/delay_logic -part xc7a100tcsg324-1
-file mkdir C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sources_1/new
-set_property target_language VHDL [current_project]
-close [ open C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sources_1/new/delay_logic.vhd w ]
-add_files C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sources_1/new/delay_logic.vhd
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-file mkdir C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sim_1/new/tb_delay_logic.vhd w ]
-add_files -fileset sim_1 C:/Users/mg/Desktop/ELE112/delay_logic/delay_logic.srcs/sim_1/new/tb_delay_logic.vhd
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-launch_simulation
-source tb_delay_logic.tcl
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-run 10 us
-relaunch_sim
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
-relaunch_sim
-run 10 us
-run 10 us
-relaunch_sim
+open_project D:/fpga_accelerometer/fpga_accelerometer/fpga_accelerometer.xpr
+add_files -fileset constrs_1 -norecurse E:/Skrivebord/Nexys4DDR_Master.xdc
+import_files -fileset constrs_1 {D:/Nexys4DDR_Master.xdc E:/Skrivebord/Nexys4DDR_Master.xdc}
+remove_files  -fileset constrs_1 E:/Skrivebord/Nexys4DDR_Master.xdc
+update_files -from_files E:/Skrivebord/Nexys4DDR_Master.xdc -to_files D:/Nexys4DDR_Master.xdc -filesets [get_filesets *]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/fpga_accelerometer/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_accelerometer/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_accelerometer/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/fpga_accelerometer/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+import_files -fileset constrs_1 E:/Skrivebord/Nexys4DDR_Master.xdc

@@ -1,0 +1,364 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Apr 21 21:51:23 2018
+# Process ID: 5464
+# Current directory: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6452 C:\Users\matsg17\Desktop\project_friday\fpga_accelerometer\fpga_accelerometer.xpr
+# Log file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/vivado.log
+# Journal file: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+close [ open C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter_driver.vhd w ]
+add_files C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter_driver.vhd
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:08:38 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:08:38 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.2
+  **** Build date : Jun 15 2017-18:53:26
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292742578A
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:14:30 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:14:30 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: data_transition
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1161.301 ; gain = 30.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'data_transition' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:63]
+	Parameter N bound to: 8 - type: integer 
+	Parameter TS bound to: 64 - type: integer 
+WARNING: [Synth 8-614] signal 'r_shape_form' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_0' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_1' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_2' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_3' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_4' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_5' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_6' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'w_segment_off_7' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:99]
+WARNING: [Synth 8-614] signal 'r_data' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:131]
+	Parameter N bound to: 8 - type: integer 
+	Parameter TS bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'spi_master' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:26' bound to instance 'spi_component' of component 'spi_master' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'spi_master' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:41]
+	Parameter N bound to: 8 - type: integer 
+	Parameter TS bound to: 64 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:83]
+INFO: [Synth 8-226] default block is never used [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:122]
+INFO: [Synth 8-3491] module 'prescaler' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/prescaler.vhd:35' bound to instance 'prescaler_component' of component 'prescaler' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'prescaler' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/prescaler.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'prescaler' (1#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/prescaler.vhd:42]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter.vhd:26' bound to instance 'counter_component' of component 'counter' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter.vhd:35]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter.vhd:35]
+	Parameter N bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'shiftlne' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/shiftlne.vhd:26' bound to instance 'shiftlne_component' of component 'shiftlne' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'shiftlne' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/shiftlne.vhd:38]
+	Parameter N bound to: 64 - type: integer 
+WARNING: [Synth 8-614] signal 'i_tx_register' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/shiftlne.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'shiftlne' (3#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/shiftlne.vhd:38]
+WARNING: [Synth 8-614] signal 'r_data_register' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element w_load_shift_reg was removed.  [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'spi_master' (4#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/spi_master.vhd:41]
+INFO: [Synth 8-3491] module 'delay_logic' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd:36' bound to instance 'delay_logic_component' of component 'delay_logic' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'delay_logic' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'delay_logic' (5#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd:42]
+INFO: [Synth 8-3491] module 'select_logic' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd:27' bound to instance 'select_logic_component' of component 'select_logic' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'select_logic' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'select_logic' (6#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd:37]
+	Parameter N bound to: 12 - type: integer 
+INFO: [Synth 8-3491] module 'signed_to_bcd' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd:6' bound to instance 'signed_to_bcd_component' of component 'signed_to_bcd' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'signed_to_bcd' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd:21]
+	Parameter N bound to: 12 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element bcd_reg was removed.  [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'signed_to_bcd' (7#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/signed_to_bcd.vhd:21]
+INFO: [Synth 8-3491] module 'bcd_to_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:28' bound to instance 'bcd_to_sevenseg_component' of component 'bcd_to_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'bcd_to_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:42]
+INFO: [Synth 8-3491] module 'converter_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:34' bound to instance 'seg0' of component 'converter_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'converter_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'converter_sevenseg' (8#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:41]
+INFO: [Synth 8-3491] module 'converter_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:34' bound to instance 'seg1' of component 'converter_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:46]
+INFO: [Synth 8-3491] module 'converter_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:34' bound to instance 'seg2' of component 'converter_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:47]
+INFO: [Synth 8-3491] module 'converter_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/converter_sevenseg.vhd:34' bound to instance 'seg3' of component 'converter_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:48]
+INFO: [Synth 8-226] default block is never used [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'bcd_to_sevenseg' (9#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/bcd_to_sevenseg.vhd:42]
+INFO: [Synth 8-3491] module 'driver_sevenseg' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:35' bound to instance 'driver_sevenseg_component' of component 'driver_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:213]
+INFO: [Synth 8-638] synthesizing module 'driver_sevenseg' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:55]
+WARNING: [Synth 8-614] signal 'output' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'one' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'ten' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'hundred' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'thousand' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'sign' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+WARNING: [Synth 8-614] signal 'xyzt' is read in the process but is not in the sensitivity list [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:77]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-3491] module 'counter_driver' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter_driver.vhd:26' bound to instance 'output_component' of component 'counter_driver' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'counter_driver' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter_driver.vhd:35]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_driver' (10#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/counter_driver.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'driver_sevenseg' (11#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/driver_sevenseg.vhd:55]
+INFO: [Synth 8-3491] module 'data_update' declared at 'C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_update.vhd:36' bound to instance 'data_update_component' of component 'data_update' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:233]
+INFO: [Synth 8-638] synthesizing module 'data_update' [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_update.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'data_update' (12#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_update.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'data_transition' (13#1) [C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd:63]
+WARNING: [Synth 8-3331] design bcd_to_sevenseg has unconnected port i_clk
+WARNING: [Synth 8-3331] design select_logic has unconnected port i_clk
+WARNING: [Synth 8-3331] design data_transition has unconnected port i_reset
+WARNING: [Synth 8-3331] design data_transition has unconnected port i_reset_x
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1194.363 ; gain = 63.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1194.363 ; gain = 63.551
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/matsg17/Desktop/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1524.926 ; gain = 394.113
+48 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1524.926 ; gain = 394.113
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:18:37 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:18:37 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:28:39 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:28:39 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:29:04 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:29:04 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:39:00 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:39:00 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:50:09 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:50:09 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Apr 21 22:54:33 2018] Launched synth_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/synth_1/runme.log
+[Sat Apr 21 22:54:33 2018] Launched impl_1...
+Run output will be captured here: C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/matsg17/Desktop/project_friday/fpga_accelerometer/fpga_accelerometer.runs/impl_1/data_transition.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 21 22:58:15 2018...

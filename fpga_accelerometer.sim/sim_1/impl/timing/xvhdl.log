@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/ele112/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/ele112/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/data_transition.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_transition
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/ele112/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/delay_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity delay_logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/ele112/fpga_accelerometer/fpga_accelerometer.srcs/sources_1/new/select_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity select_logic
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/matsg17/Desktop/ele112/fpga_accelerometer/fpga_accelerometer.srcs/sim_1/new/tb_data_transition.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_data_transition

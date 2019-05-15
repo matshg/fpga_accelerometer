@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1524789184">
+  <File Type="PWROPT-DRC" Name="data_transition_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="data_transition_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="data_transition_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="data_transition_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="data_transition.tcl"/>
+  <File Type="OPT-HWDEF" Name="data_transition.hwdef"/>
+  <File Type="RDI-RDI" Name="data_transition.vdi"/>
+  <File Type="OPT-DCP" Name="data_transition_opt.dcp"/>
+  <File Type="OPT-DRC" Name="data_transition_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="data_transition_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="data_transition_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="data_transition_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="data_transition_placed.dcp"/>
+  <File Type="PLACE-IO" Name="data_transition_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="data_transition_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="data_transition_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="data_transition_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="data_transition_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="data_transition_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="data_transition_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="data_transition_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="data_transition_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="data_transition_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="data_transition_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="data_transition_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="data_transition_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="data_transition_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="data_transition_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="data_transition_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="data_transition_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="data_transition_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="data_transition.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="data_transition_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="data_transition.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="data_transition_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="data_transition.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="data_transition_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="data_transition.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="data_transition_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="data_transition_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="data_transition_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="data_transition_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="data_transition_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="data_transition_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="data_transition_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="data_transition_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="data_transition_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="data_transition_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="data_transition_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="data_transition_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="data_transition_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="data_transition_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="data_transition_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="data_transition.bit"/>
+  <File Type="BITSTR-RBT" Name="data_transition.rbt"/>
+  <File Type="BITSTR-NKY" Name="data_transition.nky"/>
+  <File Type="BITSTR-BMM" Name="data_transition_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="data_transition.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="data_transition.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/components.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/components.vhd"/>
+        <Attr Name="ImportTime" Val="1524092486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/counter.vhd"/>
+        <Attr Name="ImportTime" Val="1524093676"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/delay_logic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/delay_logic.vhd"/>
+        <Attr Name="ImportTime" Val="1523976468"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prescaler.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/prescaler.vhd"/>
+        <Attr Name="ImportTime" Val="1524090922"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/select_logic.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/select_logic.vhd"/>
+        <Attr Name="ImportTime" Val="1524009590"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shiftlne.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/shiftlne.vhd"/>
+        <Attr Name="ImportTime" Val="1524090936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/spi_master.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../delay_logic/delay_logic.srcs/sources_1/new/spi_master.vhd"/>
+        <Attr Name="ImportTime" Val="1524093658"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_transition.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/signed_to_bcd.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bcd_to_sevenseg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/converter_sevenseg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/driver_sevenseg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/data_update.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/counter_driver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="data_transition"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Skrivebord/Nexys4DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="E:/Skrivebord/Nexys4DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1524752079"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

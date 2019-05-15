@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../fpga_accelerometer.srcs/sim_1/new/tb_spi_master.vhd"
+
+# Do not sort compile order
+nosort
